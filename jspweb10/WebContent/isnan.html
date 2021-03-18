@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jspweb</title>
+<style type="text/css"></style>
+</head>
+<body>
+
+<h3>숫자를 입력받고 숫자가 아니면 다시 입력</h3>
+
+<script>
+
+	var input;
+	do{
+		input = prompt("숫자를 입력하시오(숫자가 아니면 다시 입력됨)","");
+		test = isNaN(input); // 숫자-false
+		
+	}while(test==true);
+	
+	document.write(input);
+</script>
+</body>
+</html>

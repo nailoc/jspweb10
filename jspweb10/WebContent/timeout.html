@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jspweb</title>
+<style type="text/css"></style>
+</head>
+<body>
+
+<h3>3초후에 해당페이지로 이동하시오</h3>
+<input type="button" value="타이머1 멈춤" onclick="stop();">
+
+<script>
+
+	id_1 = setTimeout("moveTo()", 3000);
+	// 아이디는 멈추기 위해서 값을 저장
+	
+	function moveTo() {
+		location.href='index.html';
+	}
+	
+	function stop() {
+		clearTimeout(id_1); // 저장한 아이디를 매개변수로 입력
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jspweb</title>
+<style type="text/css"></style>
+</head>
+<body>
+
+	<h3>날짜(일)을 입력하면 초로 환산 출력</h3>
+	
+<script>
+	// 1일 = 24시간
+	// 1시간 = 60분
+	// 1분 = 60초
+	// 3일(입력) => 몇초입니다(출력)
+	day = prompt("몇일인지 입력하세요:","");
+	second = 60 * 60 * 24 * day;
+	document.write(day+"를 초로 환산하면: "+second);
+	
+	// 1초 = 1000밀리세컨드
+</script>
+</body>
+</html>
