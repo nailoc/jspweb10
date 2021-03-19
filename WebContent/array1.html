@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jspweb10</title>
+<link rel="stylesheet" href="css/style.css"></link>
+<style type="text/css"></style>
+</head>
+<body>
+	<h3>배열의 선언방법</h3>
+
+<script>
+	// 1번방법은 초기값을 넣으면서 선언
+	var score = [100,90,70,60,80];
+	// 2번방법은 선언하고 초기값을 넣는 방식
+	var num = new Array(5);
+	num[0]=100;
+	// 자바경우 비교 int[] sc = {100,90,70,60,80};
+	// 배열의 마지막과 처음을 출력하시오
+	document.write("배열의크기:"+score.length+"<br>");
+	document.write("처음값:"+score[0]+"<br>");
+	document.write("마지막값:"+score[score.length-1]+"<br>");
+	document.write("<br>");
+	document.write("num[0]:"+num[0]+"<br>");
+</script>
+</body>
+</html>

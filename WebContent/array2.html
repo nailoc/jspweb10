@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jspweb10</title>
+<link rel="stylesheet" href="css/style.css"></link>
+<style type="text/css"></style>
+</head>
+<body>
+	
+
+<script>
+	// 1번-초기값을 넣어서 배열을 선언해보자
+	// 배열변수명 weight - 5명의 몸무게를
+	// 평균을 구하시오
+	var weight = [50.4, 65.3, 49.8, 90.1, 73.3];
+	sum=0;
+	for(i=0; i<weight.length; i++) {
+		sum+=weight[i];
+	}
+	document.write("총합은"+(sum/weight.length)+"<br>");
+	// 2번-Array()로 배열을 선언하고 5개
+	// 배열변수명은 num 
+	// 1~5까지 값을 대입해서 출력하시오
+	var num = new Array(5);
+	var num2 = new Array(1,2,3,4,5);
+	var num3 = new Array(); // 갯수를 모르는 경우 - js 가변배열
+	for(i=0; i<num.length; i++) {
+		num[i]=i+1;
+		document.write(num[i]+", ");
+	}
+</script>
+</body>
+</html>

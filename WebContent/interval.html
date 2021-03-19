@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jspweb</title>
+<style type="text/css"></style>
+</head>
+<body>
+
+<h3>페이지에 랜덤숫자를 2초 간격으로 발생</h3>
+
+<p><input type="button" value="시작" onclick="begin();"></p>
+<p><input type="button" value="정지" onclick="stop();"></p>
+<div id="demo"></div>
+
+<script>
+	var idnum = 0;
+
+	function RandomNumber() {
+		document.getElementById("demo").innerHTML += "<br>"+ Math.random();
+	}
+	
+	function begin() {
+		idnum = setInterval("RandomNumber()", 2000);
+	}
+	
+	function stop() {
+		clearInterval(idnum);
+	}
+</script>
+</body>
+</html>
