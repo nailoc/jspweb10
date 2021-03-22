@@ -1,0 +1,23 @@
+body {
+	background-color: #654321;
+}
+
+div.wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+div.control {
+	text-align: center;
+}
+
+footer {
+	height: 50px;
+	background-color: lightgray;
+}
+address {
+	height: 100%;
+	font-size: 120%;
+	line-height: 50px;
+	padding-left: 20px;
+	color: blue;
+}
