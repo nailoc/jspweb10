@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jspweb10</title>
+<link rel="stylesheet" href="css/style.css"></link>
+<style type="text/css"></style>
+</head>
+<body>
+	<h3>임의의 코드를 생성하고 체크</h3>
+	<p id="demo2">AB123</p>
+	<p><input id="demo" type="text" value=""  placeholder="코드를 같게 입력하시오"></p>
+	<p><input type="button" value="코드체크" onclick="chkcode();">
+
+<script>
+	function randomCode() {
+		// code = "AB135";
+		// 배열을 이용하는 방법
+		// 문자열일 이용하는 방법
+		chars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //10+26개
+		code = "";
+		for(k=0; k<5; k++) {
+			i = Math.floor(Math.random()*36);   // 0~35
+			code += chars.substring(i,i+1); // substring(시작인덱스, 마지막인덱스+1);
+		}
+		// alert(code);
+		// 아스키코드 A=65 이용하는 방법
+
+		document.getElementById("demo2").innerText=code;
+	}
+	randomCode();
+	
+	function chkcode() {
+		//입력한 코드를 가져오기
+		inCode = document.getElementById("demo").value;
+		randCode = document.getElementById("demo2").innerText;
+		if(inCode==randCode){
+			alert("정답");
+		}else{
+			alert("틀림");
+		}
+	}
+</script>
+</body>
+</html>
